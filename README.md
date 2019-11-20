@@ -15,3 +15,11 @@ hands on exercises for clickers using Data Refinery and Modeler Flows
 Connect them
 Run
 Flechita hacia abajo button
+
+Search for columns that are < 30% complete. Which are:
+
+CarrierDelay	Continuous	312	250	None	Never	Fixed	27.762	35755	93035	0	0	0
+26	WeatherDelay	Continuous	82	207	None	Never	Fixed	27.762	35755	93035	0	0	0
+27	NASDelay	Continuous	304	275	None	Never	Fixed	27.762	35755	93035	0	0	0
+28	SecurityDelay	Continuous	2	36	None	Never	Fixed	27.762	35755	93035	0	0	0
+29	LateAircraftDelay
