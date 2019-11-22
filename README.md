@@ -1,32 +1,38 @@
 # clickers
 hands on exercises for clickers using Data Refinery and Modeler Flows
 
-## Create Project
+## Create a project and get your data.
 
++ Create a project. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-project.png)
 
-## Download data and load it to your project
++ Download the data from [here](https://ibm.box.com/shared/static/negloqqqv21wx4hag2sml0h7zdj4pygs.csv)
 
-
-+ Download the data from here https://ibm.box.com/shared/static/negloqqqv21wx4hag2sml0h7zdj4pygs.csv
-+ Load the data to your project [load-data]
++ Load the data to your project 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
 
 
 ## Create Modeler Flow and Start Data Exploration 
 
 
-+ Create a modeler flow on your project, under Assets [create-modeler-flow]
++ Create a modeler flow on your project, under Assets 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
 
 
-+ On the top right, click data panel (10101) and drag and drop the `airline.csv` dataset to the modeler flow [data-to-flow]
++ On the top right, click data panel (10101) and drag and drop the `airline.csv` dataset to the modeler flow 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-to-flow.png)
 
 
-+ Under the Outputs Node List, drag and drop the "Data Audit" node [data-audit]
++ Under the Outputs Node List, drag and drop the "Data Audit" node 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-audit.png)
 
 
-+ Connect to data node, right click and run. On the top right click the round arrow pointing down, double click the audit node results and scroll down until you see a list of the percentage of the missing values on each column. [connect-run]
++ Connect to data node, right click and run. On the top right click the round arrow pointing down, double click the audit node results and scroll down until you see a list of the percentage of the missing values on each column. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/connect-run.png)
 
 
-+ Search for columns that are < 30% complete [see-missing]
++ Search for columns that are < 30% complete 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-missing.png)
 +    CarrierDelay
 +    WeatherDelay    
 +    NASDelay    
@@ -34,7 +40,8 @@ hands on exercises for clickers using Data Refinery and Modeler Flows
 +    LateAircraftDelay
 
 
-+ Remove columns that have more than 70% missing values. Drag a Filter Node (from Field Operations list) and select the missing value fields to filter out. [filter-out-fields]
++ Remove columns that have more than 70% missing values. Drag a Filter Node (from Field Operations list) and select the missing value fields to filter out. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/filter-out-fields.png)
 +  CarrierDelay
 +  WeatherDelay    
 +   NASDelay    
@@ -42,80 +49,110 @@ hands on exercises for clickers using Data Refinery and Modeler Flows
 +    LateAircraftDelay
 
 
-+ Verify that the fields were filtered out bu right clicking the Filter node then Preview [preview-filter-out]
++ Verify that the fields were filtered out bu right clicking the Filter node then Preview 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/preview-filter-out.png)
 
 
-+ Remove cancelled or diverted flight by adding a Select Node with condition: Cancelled = 1 or Diverted = 1 [select-flights]
++ Remove cancelled or diverted flight by adding a Select Node with condition: Cancelled = 1 or Diverted = 1 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/select-flights.png)
 
 
 ## Visualizations
 
 
-+ Open the visualization tool. Go to your project, then Data Assets select the `airline.csv` and click "Data Visualization" [open-viz-tool]
++ Open the visualization tool. Go to your project, then Data Assets select the `airline.csv` and click "Data Visualization" ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-viz-tool.png)
 
 
-+ Create a histogram of the flight arrival delay. Select the Histogram type, select column ArrDelay [hist-arrdelay]
++ Create a histogram of the flight arrival delay. Select the Histogram type, select column ArrDelay 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-arrdelay.png)
 
 
-+ Play with the histogram bin size. Bin size equal to 1 provides hourly delays. [bin-size]
++ Play with the histogram bin size. Bin size equal to 1 provides hourly delays. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/bin-size.png)
 
 
-+ Plot flights per year using a histogram of the filed Year. [hist-year]
++ Plot flights per year using a histogram of the filed Year. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-year.png)
 
 
-+ Visualize busiest airlines using a Bar Plot of column UniqueCarrier. [busiest-airlines]
++ Visualize busiest airlines using a Bar Plot of column UniqueCarrier. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airlines.png)
 
 
-+ Visualize busiest airports using a Bar plot of column Origin. [busiest-airports]
++ Visualize busiest airports using a Bar plot of column Origin. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airports.png)
 
 
-+ Visualize busiest times to fly with a histogram of departure time. [busiest-time]
++ Visualize busiest times to fly with a histogram of departure time. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-time.png)
 
 
-+ Draw a correlation plot using the scatter plot correlation type chart. [corr-plot]
++ Draw a correlation plot using the scatter plot correlation type chart. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-plot.png)
 
 
 ## Back to Modeler to Train an ML Model
 
 
-+ Compute correlations between ArrDelay and the rest of the columns. First drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. [corr-arrdelay]
++ Compute correlations between ArrDelay and the rest of the columns. First drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-arrdelay.png)
 
 
-+ Right click the Statistics node and RUN. See the results on the top right under the rounded arrow pointing down and double-click Statistics. [see-correlations]
++ Right click the Statistics node and RUN. See the results on the top right under the rounded arrow pointing down and double-click Statistics. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-correlations.png)
 
 
 + Create column "class" using the Derive node (under Field operations). Configure Values:
 + Early if ArrDelay < 0, 
 + Delayed if ArrDelay > 15,
-+ On time 0 < ArrDelay < 15   [create-class-1] [create-class-2]
++ On time 0 < ArrDelay < 15   
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-class-1.png) 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-class-2.png)
 
 
-+ Plot the distribution of "class" using the Distribution Node (under Graph operations). [class-distribution]
++ Plot the distribution of "class" using the Distribution Node (under Graph operations). 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-distribution.png)
 
 
-+ Check the class distribution. Click the round arrow pointing down on the top right and double click the class distribution. [see-class-dist]
++ Check the class distribution. Click the round arrow pointing down on the top right and double click the class distribution. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-class-dist.png)
 
 
-+ Add a Type Node (under Field operations) and change the class role to Target. [class-role-target] [class-role-target-2]
++ Add a Type Node (under Field operations) and change the class role to Target. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target.png) 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target-2.png)
 
 
-+ Split data into train (80%) and test (20%) sets using the Partition Node (under Field operations). [split]
++ Split data into train (80%) and test (20%) sets using the Partition Node (under Field operations). 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/split.png)
 
 
-+ Add a C5 Model Node (under model operations). Right click and RUN to train the model. [add-model]
++ Add a C5 Model Node (under model operations). Right click and RUN to train the model. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/add-model.png)
 
 
-+ Right click the output model and click the View Model option to get model details. Why do you think one single variable is getting all the importance? [view-model]
++ Right click the output model and click the View Model option to get model details. Why do you think one single variable is getting all the importance? 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/view-model.png)
 
 
-+ Go back to the Type node created a few steps back and change the ArrDelay and DepDelay columns' role to None (do the same for all the inputs that are not useful in practice). [adjust-type-node]
++ Go back to the Type node created a few steps back and change the ArrDelay and DepDelay columns' role to None (do the same for all the inputs that are not useful in practice). 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/adjust-type-node.png)
 
 
-+ Inspect model's quality by connecting the Analysis ode to the yellow node (the trained model). Right click and run to see quality metrics like confusion matrix and accuracy on the train and test sets. [quality]
++ Inspect model's quality by connecting the Analysis ode to the yellow node (the trained model). Right click and run to see quality metrics like confusion matrix and accuracy on the train and test sets. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/quality.png)
 
 
-+ Open the quality metrics report by double clicking the Analysis report (under Output operations) on the top right under the rounded pointing down arrow. [open-quality] See how the accuracy and the confusion matrices change in train and test datasets. [see-quality]
++ Open the quality metrics report by double clicking the Analysis report (under Output operations) on the top right under the rounded pointing down arrow. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-quality.png) 
+
++ See how the accuracy and the confusion matrices change in train and test datasets. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-quality.png)
 
 
-+ Connect a Table Node (under Output operations) to the train model. Right click and RUN. [run-predictions] To see the predictions of the class field, on the top right under the rounded pointing down arrow double click the most recent Table report . [see-predictions]
++ Connect a Table Node (under Output operations) to the train model. Right click and RUN. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/run-predictions.png)
+
++ To see the predictions of the class field, on the top right under the rounded pointing down arrow double click the most recent Table report . 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-predictions.png)
 
