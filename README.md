@@ -20,7 +20,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
 
 
-## Step 2: Data curation
+## Data curation
 
 + Create a modeler flow on your project, under Assets 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
