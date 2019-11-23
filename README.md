@@ -1,7 +1,15 @@
-# clickers
-hands on exercises for clickers using Data Refinery and Modeler Flows
+# Codeless AI model building.
 
-## Create a project and get your data.
+This repository contains examples on how to build AI and ML models using a visual interface and with no need to write a single line of code.
+
+Tools used are Data Refinery and Modeler Flows, available on:
+- Watson Studio Cloud
+- Watson Studio Local
+- Watson Studio Desktop
+- Watson Machine Learning on Z
+- SPSS Modeler
+
+## Step 1: Data loading
 
 + Create a project. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-project.png)
@@ -12,12 +20,12 @@ hands on exercises for clickers using Data Refinery and Modeler Flows
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
 
 
-## Create Modeler Flow and Start Data Exploration 
-
+## Step 2: Data Exploration
 
 + Create a modeler flow on your project, under Assets 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
 
+Flows allow you to drag and drop nodes and connect them. Each node could be a dataset, a transformation, or a model, among other things.
 
 + On the top right, click data panel (10101) and drag and drop the `airline.csv` dataset to the modeler flow 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-to-flow.png)
@@ -49,7 +57,7 @@ hands on exercises for clickers using Data Refinery and Modeler Flows
 +    LateAircraftDelay
 
 
-+ Verify that the fields were filtered out bu right clicking the Filter node then Preview 
++ Verify that the fields were filtered out by right clicking the Filter node then Preview 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/preview-filter-out.png)
 
 
