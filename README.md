@@ -1,4 +1,4 @@
-# Codeless AI model building.
+# Codeless AI model building
 
 This repository contains examples on how to build AI and ML models using a visual interface and with no need to write a single line of code.
 
@@ -9,7 +9,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 - Watson Machine Learning on Z
 - SPSS Modeler
 
-## Step 1: Data loading
+## Project setup and data loading
 
 + Create a project. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-project.png)
@@ -20,7 +20,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
 
 
-## Step 2: Data Exploration
+## Step 2: Data curation
 
 + Create a modeler flow on your project, under Assets 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
@@ -31,16 +31,19 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-to-flow.png)
 
 
-+ Under the Outputs Node List, drag and drop the "Data Audit" node 
++ Under the Outputs Node List, drag and drop the "Data Audit" node.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-audit.png)
 
 
-+ Connect to data node, right click and run. On the top right click the round arrow pointing down, double click the audit node results and scroll down until you see a list of the percentage of the missing values on each column. 
++ Connect the data node wo the Data Audit node. Right click on the Data Audit node and select "Run". On the top right, click the round arrow pointing down, double click on the audit node results and scroll down until you see a list of the percentage of missing values on each column. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/connect-run.png)
 
 
-+ Search for columns that are < 30% complete 
++ Search for columns that are < 30% complete, i.e., more than 70% missing values.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-missing.png)
+
+These should be:
+
 +    CarrierDelay
 +    WeatherDelay    
 +    NASDelay    
@@ -50,6 +53,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 
 + Remove columns that have more than 70% missing values. Drag a Filter Node (from Field Operations list) and select the missing value fields to filter out. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/filter-out-fields.png)
+
 +  CarrierDelay
 +  WeatherDelay    
 +   NASDelay    
@@ -61,12 +65,11 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/preview-filter-out.png)
 
 
-+ Remove cancelled or diverted flight by adding a Select Node with condition: Cancelled = 1 or Diverted = 1 
++ Remove cancelled or diverted flights by adding a Select Node with condition: Cancelled = 1 or Diverted = 1 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/select-flights.png)
 
 
-## Visualizations
-
+## Data visualizations
 
 + Open the visualization tool. Go to your project, then Data Assets select the `airline.csv` and click "Data Visualization" ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-viz-tool.png)
 
@@ -75,19 +78,19 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-arrdelay.png)
 
 
-+ Play with the histogram bin size. Bin size equal to 1 provides hourly delays. 
++ Play with the histogram bin size. Bin size equal to 2 provides hourly delays. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/bin-size.png)
 
 
-+ Plot flights per year using a histogram of the filed Year. 
++ Plot flights per year using a histogram of the field Year. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-year.png)
 
 
-+ Visualize busiest airlines using a Bar Plot of column UniqueCarrier. 
++ Visualize busiest airlines using a barplot of column UniqueCarrier. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airlines.png)
 
 
-+ Visualize busiest airports using a Bar plot of column Origin. 
++ Visualize busiest airports using a barplot of column Origin. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airports.png)
 
 
@@ -99,10 +102,9 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-plot.png)
 
 
-## Back to Modeler to Train an ML Model
+## Back to Modeler to train an ML model
 
-
-+ Compute correlations between ArrDelay and the rest of the columns. First drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
++ Compute correlations between ArrDelay and the rest of the columns. First, drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-arrdelay.png)
 
 
@@ -110,7 +112,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-correlations.png)
 
 
-+ Create column "class" using the Derive node (under Field operations). Configure Values:
++ Create column "class" using the Derive node (under Field operations). Configure values:
 + Early if ArrDelay < 0, 
 + Delayed if ArrDelay > 15,
 + On time 0 < ArrDelay < 15   
@@ -126,16 +128,16 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-class-dist.png)
 
 
-+ Add a Type Node (under Field operations) and change the class role to Target. 
++ Add a Type node (under Field operations) and change the class role to "target". 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target.png) 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target-2.png)
 
 
-+ Split data into train (80%) and test (20%) sets using the Partition Node (under Field operations). 
++ Split data into train (80%) and test (20%) sets using the Partition node (under Field operations). 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/split.png)
 
 
-+ Add a C5 Model Node (under model operations). Right click and RUN to train the model. 
++ Add a C5 Model node (under model operations). Right click and RUN to train the model. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/add-model.png)
 
 
@@ -158,7 +160,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-quality.png)
 
 
-+ Connect a Table Node (under Output operations) to the train model. Right click and RUN. 
++ Connect a Table mode (under Output operations) to the train model. Right click and RUN. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/run-predictions.png)
 
 + To see the predictions of the class field, on the top right under the rounded pointing down arrow double click the most recent Table report . 
