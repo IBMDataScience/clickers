@@ -9,18 +9,18 @@ Tools used are Data Refinery and Modeler Flows, available on:
 - Watson Machine Learning on Z
 - SPSS Modeler
 
-## Project setup and data loading
+## Exercise 0: Project setup and data loading
 
 + Create a project. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-project.png)
 
 + Download the data from [here](https://ibm.box.com/shared/static/oiynkgckhibo6aja51vcn8y7jup1vnzi.csv)
 
-+ Load the data to your project 
++ Load the data to your project. To do so, click on the plus (+) sign at the top right corner and select "Add data set".
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
 
 
-## Data curation
+## Exercise 1: Data curation
 
 + Create a modeler flow on your project, under Assets 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
