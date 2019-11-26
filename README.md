@@ -14,7 +14,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 + Create a project. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-project.png)
 
-+ Download the data from [here](https://ibm.box.com/shared/static/negloqqqv21wx4hag2sml0h7zdj4pygs.csv)
++ Download the data from [here](https://ibm.box.com/shared/static/oiynkgckhibo6aja51vcn8y7jup1vnzi.csv)
 
 + Load the data to your project 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/load-data.png)
