@@ -35,31 +35,24 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-audit.png)
 
 
-+ Connect the data node (airline.csv) to the Data Audit node. Right click on the Data Audit node and select "Run". To see the results, go to the top right corner and click the round arrow pointing down. You will see "Data Audit of [29 fields]. Double click on it and scroll down until you see the column "% Complete" which indicates the percentage of non-missing values per column.  
++ Connect the data node (airline.csv) to the Data Audit node. Right click on the Data Audit node and select "Run". To see the results, go to the top right corner and click the round arrow pointing down. You will see "Data Audit of [29 fields]". 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/connect-run.png)
 
 
-+ Search for columns that are < 30% complete, i.e., more than 70% missing values.
++ Double click on "Data Audit of [29 fields]" and scroll down until you see the column "% Complete" which indicates the percentage of non-missing values per column.  Search for columns that are < 30% complete, i.e., more than 70% missing values.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-missing.png)
 
 These should be:
 
-+    CarrierDelay
-+    WeatherDelay    
-+    NASDelay    
-+    SecurityDelay    
-+    LateAircraftDelay
++ CarrierDelay
++ WeatherDelay    
++ NASDelay    
++ SecurityDelay    
++ LateAircraftDelay
 
 
-+ Remove columns that have more than 70% missing values. Drag a Filter Node (from Field Operations list) and select the missing value fields to filter out. 
++ Remove columns that have more than 70% missing values. To do so, drag and drop a Filter node (from Field Operations list) into the canvas and select the missing value fields to filter out. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/filter-out-fields.png)
-
-+  CarrierDelay
-+  WeatherDelay    
-+   NASDelay    
-+    SecurityDelay    
-+    LateAircraftDelay
-
 
 + Verify that the fields were filtered out by right clicking the Filter node then Preview 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/preview-filter-out.png)
