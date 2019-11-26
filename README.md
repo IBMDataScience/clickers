@@ -39,16 +39,16 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/connect-run.png)
 
 
-+ Double click on "Data Audit of [29 fields]" and scroll down until you see the column "% Complete" which indicates the percentage of non-missing values per column.  Search for columns that are < 30% complete, i.e., more than 70% missing values.
++ Double click on "Data Audit of [29 fields]" and scroll down until you see the column "% Complete" which indicates the percentage of non-missing values per column.  Search for columns that are < 30% complete, i.e., more than 70% missing values. These should be:
+
+- CarrierDelay
+- WeatherDelay    
+- NASDelay    
+- SecurityDelay    
+- LateAircraftDelay
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-missing.png)
 
-These should be:
 
-+ CarrierDelay
-+ WeatherDelay    
-+ NASDelay    
-+ SecurityDelay    
-+ LateAircraftDelay
 
 
 + Remove columns that have more than 70% missing values. To do so, drag and drop a Filter node (from Field Operations list) into the canvas and select the missing value fields to filter out. 
