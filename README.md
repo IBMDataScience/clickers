@@ -27,7 +27,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 
 Flows allow you to drag and drop nodes and connect them. Each node could be a dataset, a transformation, or a model, among other things.
 
-+ On the top right, click data panel (10101) and drag and drop the `airline.csv` dataset to the modeler flow 
++ On the top right, click data panel (10101) and drag and drop the `airline.csv` dataset to the modeler flow. A new node "airline.csv" should appear on the canvas: 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-to-flow.png)
 
 
@@ -35,7 +35,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/data-audit.png)
 
 
-+ Connect the data node wo the Data Audit node. Right click on the Data Audit node and select "Run". On the top right, click the round arrow pointing down, double click on the audit node results and scroll down until you see a list of the percentage of missing values on each column. 
++ Connect the data node (airline.csv) to the Data Audit node. Right click on the Data Audit node and select "Run". To see the results, go to the top right corner and click the round arrow pointing down. You will see "Data Audit of [29 fields]. Double click on it and scroll down until you see the column "% Complete" which indicates the percentage of non-missing values per column.  
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/connect-run.png)
 
 
