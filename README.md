@@ -22,7 +22,7 @@ Tools used are Data Refinery and Modeler Flows, available on:
 
 ## Exercise 1: Data curation
 
-+ Create a modeler flow on your project, under Assets 
++ Create a modeler flow on your project under Assets. Give it any name and click "Create":
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-modeler-flow.png)
 
 Flows allow you to drag and drop nodes and connect them. Each node could be a dataset, a transformation, or a model, among other things.
