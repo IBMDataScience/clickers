@@ -51,14 +51,13 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 
 
 
-+ Remove columns that have more than 70% missing values. To do so, drag and drop a Filter node (from Field Operations list) into the canvas and select the missing value fields to filter out. 
++ Remove columns that have more than 70% missing values. To do so, drag and drop a Filter node (from Field Operations list) into the canvas and connect it to the Data node "airline.csv". Double click on the Filter node and then click on "Add Columns" to select the fields to filter out. Click Save.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/filter-out-fields.png)
 
-+ Verify that the fields were filtered out by right clicking the Filter node then Preview 
++ Verify that the fields were filtered out by right clicking the Filter node then Preview. Scroll all the way to the right and make sure the intended fields were actually removed.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/preview-filter-out.png)
 
-
-+ Remove cancelled or diverted flights by adding a Select Node with condition: Cancelled = 1 or Diverted = 1 
++ Remove cancelled or diverted flights. To do so, drag and drop a Select Node to the canvas. Double click on it and create a condition, which will be "Cancelled = 1 or Diverted = 1".
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/select-flights.png)
 
 
