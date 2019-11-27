@@ -93,6 +93,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 + Draw a correlation plot using the Scatterplot matrix chart. Explore with different attributes such as ArrDelay and DepDelay. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-plot.png)
 
+Now let's go back to our Modeler Flow to do some more data exploration:
 
 + Compute correlations between ArrDelay and the rest of the columns. First, drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-arrdelay.png)
