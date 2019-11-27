@@ -63,7 +63,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 
 ## Data visualizations
 
-+ Open the visualization tool. Go to your project, then Data Assets select the `airline.csv` and click "Data Visualization" ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-viz-tool.png)
++ Open the visualization tool. Go to your project, then Assets, then Data Sets, and  Data Assets select look for  `airline.csv`. Click on the three vertical dots menu and select click "Data Visualization" ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-viz-tool.png)
 
 
 + Create a histogram of the flight arrival delay. Select the Histogram type, select column ArrDelay 
