@@ -61,7 +61,7 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/select-flights.png)
 
 
-## Data visualizations
+## Exercise 2: Data exploration
 
 + Open the visualization tool. Go to your project, then Assets, then Data Sets, and  Data Assets select look for  `airline.csv`. Click on the three vertical dots menu and select click "Data Visualization" ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/open-viz-tool.png)
 
@@ -70,23 +70,23 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-arrdelay.png)
 
 
-+ Play with the histogram bin size. Bin size equal to 2 provides hourly delays. 
++ Play with the histogram bin size. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/bin-size.png)
 
 
-+ Plot flights per year using a histogram of the field Year. 
++ Plot flights per year using a histogram of the field Year. Unselect "Show distribution curve". Click Apply.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/hist-year.png)
 
 
-+ Visualize busiest airlines using a barplot of column UniqueCarrier. 
++ Visualize busiest airlines using a barplot of column UniqueCarrier. Click Apply.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airlines.png)
 
 
-+ Visualize busiest airports using a barplot of column Origin. 
++ Visualize busiest airports using a barplot of column Origin. Click Apply.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-airports.png)
 
 
-+ Visualize busiest times to fly with a histogram of departure time. 
++ Visualize busiest times to fly with a histogram of departure time. Set "Bin width" to 2 to get hourly counts. Unselect "Show distribution curve"
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-time.png)
 
 
