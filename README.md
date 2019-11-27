@@ -95,17 +95,17 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 
 Now let's go back to our Modeler Flow to do some more data exploration:
 
-+ Compute correlations between ArrDelay and the rest of the columns. First, drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
++ Compute correlations between ArrDelay and the rest of the columns. First, drag and drop the Statistics node (under Outputs) and connect it to the Select node. Double click on the Statistics node, go to Settings, and click on "Add Columns" under "Examine". Select the ArrDelay column and unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-arrdelay.png)
 
 
-+ Right click the Statistics node and RUN. See the results on the top right under the rounded arrow pointing down and double-click Statistics. 
++ Right click on the Statistics node and click Run. See the results on the top right corner by clicking on the the round arrow pointing down and double click on Statistics. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-correlations.png)
 
 
 ## Exercise 3: Feature engineering
 
-+ Create column "class" using the Derive node (under Field operations). Configure values:
++ Create a new column "class" using the Derive node (under Field operations). Double click on it and go to Settings. Then set "Derive as" to "Nominal". Configure values as follows:
 + Early if ArrDelay < 0, 
 + Delayed if ArrDelay > 15,
 + On time 0 < ArrDelay < 15   
