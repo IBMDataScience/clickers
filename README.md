@@ -90,11 +90,9 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/busiest-time.png)
 
 
-+ Draw a correlation plot using the scatter plot correlation type chart. 
++ Draw a correlation plot using the Scatterplot matrix chart. Explore with different attributes such as ArrDelay and DepDelay. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-plot.png)
 
-
-## Back to Modeler to train an ML model
 
 + Compute correlations between ArrDelay and the rest of the columns. First, drag and drop the Statistics node (under Outputs), select the ArrDelay column, unselect all statistics. Under correlate click "Add Columns" and select all columns. Unselect the Show correlation strength labels in output. Click save. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/corr-arrdelay.png)
@@ -103,6 +101,8 @@ Flows allow you to drag and drop nodes and connect them. Each node could be a da
 + Right click the Statistics node and RUN. See the results on the top right under the rounded arrow pointing down and double-click Statistics. 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-correlations.png)
 
+
+## Exercise 3: Feature engineering
 
 + Create column "class" using the Derive node (under Field operations). Configure values:
 + Early if ArrDelay < 0, 
