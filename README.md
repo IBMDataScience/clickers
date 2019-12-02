@@ -101,9 +101,9 @@ Now let's go back to our Modeler Flow to do some more data exploration:
 ## Exercise 3: Feature engineering
 
 + Create a new column "class" using the Derive node (under Field operations). Double click on it and go to Settings. Set the name for the new column as "class". Then set "Derive as" to "Nominal". Configure values as follows:
-+ Early if ArrDelay < 0, 
-+ Delayed if ArrDelay > 15,
-+ On time 0 < ArrDelay < 15   
++ Early: if ArrDelay < 0.0, 
++ Delayed: if ArrDelay > 15.0,
++ On time: if ArrDelay >= 0.0 and ArrDelay <= 15.0
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-class-1.png) 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/create-class-2.png)
 
