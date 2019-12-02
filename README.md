@@ -173,3 +173,5 @@ Now let's go back to our Modeler Flow to do some more data exploration:
 + Congratulations! Your model has been deployed as a web service. From here, you can check the deployment details, schedule evaluations with new labeled data, test the API and update models once trained with new data.
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/deployment.png)
 
++ Click deployment details to see the API details, the scoring service and the schema.
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/dep-details.png)
