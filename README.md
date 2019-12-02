@@ -125,6 +125,7 @@ Now let's go back to our Modeler Flow to do some more data exploration:
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target.png) 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/class-role-target-2.png)
 
+## Exercise 4: Modeling
 
 + Split data into train (80%) and test (20%) sets using the Partition node (under Field operations). 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/split.png)
