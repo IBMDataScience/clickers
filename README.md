@@ -155,3 +155,23 @@ Now let's go back to our Modeler Flow to do some more data exploration:
 + To see the predictions of the class field, on the top right under the rounded pointing down arrow double click the most recent Table report . 
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/see-predictions.png)
 
+## Exercise 5: Deploy Model
+
++ Right click the trained model node and "Save as a model". 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/save-model.png)
+
++ Name your model and save. 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/name-model.png)
+
++ Go back to your project and look for your model. Under Actions, click "Publish". 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/publish-model.png)
+
++ On the published models (in the Models TAB), under actions, click "Deploy". 
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/click-deploy.png)
+
++ Name your deployment and click "create"
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/name-deploy.png)
+
++ Congratulations! Your model has been deployed as a web service. From here, you can check the deployment details, schedule evaluations with new labeled data, test the API and update models once trained with new data.
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/deployment.png)
+
