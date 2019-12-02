@@ -1,13 +1,8 @@
 # Codeless AI model building
 
-This repository contains examples on how to build AI and ML models using a visual interface and with no need to write a single line of code.
+Hands-on lab on how to build AI and ML models using a visual interface (no code) on Watson Studio and Watson Machine Learning
 
-Tools used are Data Refinery and Modeler Flows, available on:
-- Watson Studio Cloud
-- Watson Studio Local
-- Watson Studio Desktop
-- Watson Machine Learning on Z
-- SPSS Modeler
+Tools used are Data Refinery and Modeler Flows, available on: Watson Studio Cloud / Local / Desktop and Machine Learning on Z.
 
 ## Exercise 0: Project setup and data loading
 
