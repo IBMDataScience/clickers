@@ -174,4 +174,4 @@ Now let's go back to our Modeler Flow to do some more data exploration:
 ![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/deployment.png)
 
 + Click deployment details to see the API details, the scoring service and the schema.
-![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/dep-details.png)
+![](https://github.com/IBMDataScience/clickers/blob/master/screenshots/details.png)
